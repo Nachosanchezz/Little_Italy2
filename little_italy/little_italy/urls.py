@@ -21,4 +21,8 @@ from little_italy.views import home
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', home, name='home'),
+    path('carrito/', include('carrito.urls')),
+    path('menu/', include('menu.urls')),
+    path('pedido/', include('pedido.urls')),
+    path('usuarios/', include('usuarios.urls')),
 ]

@@ -1,0 +1,162 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo claro para contrastar */
+    color: #ffffff; /* Texto blanco por defecto */
+}
+
+/* Header */
+header {
+    background-color: #c0392b; /* Rojo intenso */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #e74c3c; /* Línea decorativa más clara */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+}
+
+/* Footer */
+footer {
+    background-color: #c0392b; /* Mismo color que el header */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Botones */
+button, .btn {
+    background-color: #e74c3c; /* Rojo vivo */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+}
+
+/* Inputs y selects */
+input[type="text"], input[type="number"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333333; /* Texto oscuro para inputs */
+    background-color: #ffffff; /* Fondo claro */
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #e74c3c; /* Resalta en rojo */
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto oscuro */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+    background-color: #c0392b; /* Rojo intenso */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f2f2f2; /* Suave resaltado */
+}
+
+/* Tarjetas de productos */
+.card {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c0392b; /* Rojo intenso */
+}
+
+.card .card-text {
+    font-size: 1rem;
+    color: #666666; /* Texto gris para descripciones */
+}
+
+.card .text-success {
+    color: #27ae60 !important; /* Verde para precios */
+}
+
+/* Categorías */
+.list-group-item {
+    background-color: #e74c3c; /* Rojo vivo */
+    color: #ffffff;
+    border: none;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.list-group-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.list-group-item:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+    cursor: pointer;
+}
+
+/* Títulos de secciones */
+h2 {
+    color: #c0392b; /* Rojo intenso */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 10px;
+    display: inline-block;
+}

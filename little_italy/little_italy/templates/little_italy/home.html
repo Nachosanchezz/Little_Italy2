@@ -1,12 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzería Little Italy</title>
-</head>
-<body>
-    <h1>Bienvenido a Pizzería Little Italy</h1>
-    <p>El auténtico sabor italiano está aquí. Explora nuestro menú y personaliza tus pedidos.</p>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<section class="hero bg-danger text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">¡Bienvenido a Little Italy!</h1>
+        <p class="lead mt-3">Disfruta de las mejores pizzas hechas con amor, para recoger o con entrega a domicilio.</p>
+        <a href="/menu/" class="btn btn-light btn-lg mt-4">Explora nuestro Menú</a>
+    </div>
+</section>
+
+<section class="about bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">¿Qué hace nuestras pizzas especiales?</h2>
+        <p class="text-muted">Solo utilizamos ingredientes frescos y de la más alta calidad para brindarte una experiencia auténticamente italiana.</p>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>Calidad garantizada</h3>
+                <p>Seleccionamos cuidadosamente cada ingrediente para que disfrutes de un sabor único en cada bocado.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Atención al cliente</h3>
+                <p>Nos aseguramos de que cada cliente reciba un servicio excepcional, ya sea en nuestro restaurante o en la comodidad de su hogar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta bg-warning text-center py-5">
+    <div class="container">
+        <h2 class="mb-4">Haz tu pedido online</h2>
+        <p class="lead">Regístrate en pocos pasos y disfruta de nuestras pizzas en minutos.</p>
+        <a href="/usuarios/" class="btn btn-danger btn-lg">Regístrate aquí</a>
+    </div>
+</section>
+
+<section class="gallery py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Un vistazo a nuestras pizzas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="bg-light p-3 text-center shadow">
+                    <h3>Pizza Margarita</h3>
+                    <p>El clásico italiano con mozzarella y albahaca fresca.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bg-light p-3 text-center shadow">
+                    <h3>Pizza Pepperoni</h3>
+                    <p>Un favorito cargado de pepperoni y queso derretido.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bg-light p-3 text-center shadow">
+                    <h3>Pizza Cuatro Quesos</h3>
+                    <p>Una mezcla de quesos que te hará enamorar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Little Italy - Todos los derechos reservados.</p>
+</footer>
+
+{% endblock %}
+
+
+    
