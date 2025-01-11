@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from little_italy.views import home
+from usuario import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -24,5 +25,8 @@ urlpatterns = [
     path('carrito/', include('carrito.urls')),
     path('menu/', include('menu.urls')),
     path('pedido/', include('pedido.urls')),
-    path('usuario/', include('usuario.urls')),
+    path('usuario/', include('usuario.urls')), 
+    path('login/', views.login_view, name='login'),  # Ruta directa para login
+    path('logout/', views.logout_view, name='logout'),  # Ruta directa para logout
+    path('register/', views.register_view, name='register'),  # Ruta directa para registro
 ]
