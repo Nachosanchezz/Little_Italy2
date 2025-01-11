@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block title %}Realizar Pedido{% endblock %}
+
 {% block content %}
 <div class="container my-5">
     <h1 class="text-center mb-4">Realiza tu Pedido</h1>
-    <form action="/confirmar-pedido/" method="POST" class="p-4 border rounded bg-light">
+    <form action="/confirmar-pedido/" method="POST" class="p-4 border rounded bg-light shadow">
         {% csrf_token %}
         
         <!-- Información del Cliente -->

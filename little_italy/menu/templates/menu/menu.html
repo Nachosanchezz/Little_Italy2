@@ -15,16 +15,16 @@
             {% for pizza in pizzas %}
             <div class="col-md-4 mb-4">
                 <div class="card h-100 text-center shadow">
+                    <img src="{{ pizza.image }}" class="card-img-top" alt="{{ pizza.name }}">
                     <div class="card-body">
-                        <h3 class="card-title">{{ pizza.name }}</h3>
-                        <p class="text-muted">Ingredientes:</p>
+                        <h3 class="card-title text-danger">{{ pizza.name }}</h3>
+                        <p class="text-muted fw-bold">Ingredientes:</p>
                         <ul class="list-unstyled">
                             {% for ingredient in pizza.ingredients %}
                             <li>- {{ ingredient }}</li>
                             {% endfor %}
                         </ul>
-                        <p class="text-danger fw-bold mt-3">{{ pizza.price }} €</p>
-                        <a href="/pedido/{{ pizza.id }}/" class="btn btn-primary mt-2">Ordenar Ahora</a>
+                        <a href="/pedido/" class="btn btn-primary mt-2">Ordenar Ahora</a>
                     </div>
                 </div>
             </div>
