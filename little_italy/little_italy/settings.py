@@ -11,10 +11,13 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
+from dotenv import load_dotenv
+import os
 
-EDAMAM_APP_ID = config("EDAMAM_APP_ID")
-EDAMAM_APP_KEY = config("EDAMAM_APP_KEY")
+load_dotenv()
+
+EDAMAM_APP_ID = os.getenv("EDAMAM_APP_ID")
+EDAMAM_APP_KEY = os.getenv("EDAMAM_APP_KEY")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,6 +44,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'little_italy',
+    'carrito', 
+    'menu',
+    'pedido',
+    'usuario',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
