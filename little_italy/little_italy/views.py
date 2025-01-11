@@ -6,7 +6,7 @@ def home(request):
     response = requests.get(api_url)
 
     if response.status_code == 200:
-        pizzas = response.json()
+        api_data = response.json()
     else:
         api_data = {"error": "No se pudo conectar con la API."}
 
