@@ -3,14 +3,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa; /* Fondo claro para contrastar */
-    color: #ffffff; /* Texto blanco por defecto */
+    background-color: #f8f9fa; /* Fondo claro para contraste */
+    color: #000000; /* Texto negro */
 }
 
 /* Header */
 header {
     background-color: #c0392b; /* Rojo intenso */
-    color: #ffffff; /* Texto blanco */
+    color: #000000; /* Texto blanco */
     padding: 20px 0;
     text-align: center;
     border-bottom: 5px solid #e74c3c; /* Línea decorativa más clara */
@@ -31,7 +31,7 @@ header p {
 /* Footer */
 footer {
     background-color: #c0392b; /* Mismo color que el header */
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
     font-size: 0.9rem;
@@ -40,7 +40,7 @@ footer {
 /* Botones */
 button, .btn {
     background-color: #e74c3c; /* Rojo vivo */
-    color: #ffffff;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -63,7 +63,7 @@ input[type="text"], input[type="number"], input[type="tel"], textarea, select {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     font-size: 1rem;
-    color: #333333; /* Texto oscuro para inputs */
+    color: #000000; /* Texto negro para inputs */
     background-color: #ffffff; /* Fondo claro */
 }
 
@@ -79,7 +79,7 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     background-color: #ffffff; /* Fondo blanco */
-    color: #333333; /* Texto oscuro */
+    color: #000000; /* Texto negro */
     border-radius: 5px;
     overflow: hidden;
 }
@@ -133,7 +133,7 @@ table tr:hover {
 /* Categorías */
 .list-group-item {
     background-color: #e74c3c; /* Rojo vivo */
-    color: #ffffff;
+    color: #000000;
     border: none;
     margin-bottom: 5px;
     font-size: 1rem;
@@ -141,7 +141,7 @@ table tr:hover {
 }
 
 .list-group-item a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
 }
 
